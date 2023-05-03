@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LinkActivity">
+
+  <LinearLayout
+      android:id="@+id/linearLayout"
+      android:layout_width="166dp"
+      android:layout_height="106dp"
+      android:orientation="vertical"
+      app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.497"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.333">
+
+    <Button
+        android:id="@+id/Connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect" />
+
+    <Button
+        android:id="@+id/Disconnect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Disconnect" />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/linearLayout2"
+      android:layout_width="283dp"
+      android:layout_height="151dp"
+      android:layout_marginBottom="300dp"
+      android:orientation="vertical"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent">
+
+    <EditText
+        android:id="@+id/Key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Key"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/Value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Value"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/Put"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Put" />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/linearLayout3"
+      android:layout_width="312dp"
+      android:layout_height="134dp"
+      android:orientation="vertical"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.494"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+      app:layout_constraintVertical_bias="0.361">
+
+    <EditText
+        android:id="@+id/TargetKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Key"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/FindByKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find" />
+
+    <TextView
+        android:id="@+id/TargetValue"
+        android:layout_width="match_parent"
+        android:layout_height="41dp" />
+  </LinearLayout>
+
+  <TextView
+      android:id="@+id/ip_text"
+      android:layout_width="217dp"
+      android:layout_height="33dp"
+      android:text="TextView"
+      android:textAlignment="center"
+      android:textSize="20sp"
+      app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/ResourceUsage"
+      android:layout_width="305dp"
+      android:layout_height="32dp"
+      android:text="TextView"
+      android:textAlignment="center"
+      app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
